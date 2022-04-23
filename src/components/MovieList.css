@@ -1,0 +1,53 @@
+.movie {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+}
+
+.movie-overlay {
+  width: 100%;
+  top: 100%;
+  opacity: 0;
+  height: 30%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.25s ease-in;
+}
+
+.movie:hover .movie-overlay,
+.movie:focus .movie-overlay {
+  opacity: 1;
+  top: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-favourites {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(151, 152, 160);
+  transition: color 0.3s ease;
+}
+
+.add-favourites:hover {
+  /* color: rgb(89, 184, 200); */
+  color: rgb(210, 77, 87);
+}
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #cdcdce;
+  font-weight: 500;
+}
