@@ -15,7 +15,7 @@ function App() {
 
   // pagal tai, kas irasoma, yra kvieciama per API.
   const getMovieRequest = async (searchValue) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=95c3cc7b`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=95c3cc7b`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
